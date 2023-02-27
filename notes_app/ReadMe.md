@@ -9,7 +9,7 @@
 - редактированием
 - удалением заметок         
 
-***Заметка должна содержит:***
+***Заметка содержит:***
 - идентификатор (генерируется)
 - заголовок
 - тело заметки
@@ -26,20 +26,10 @@
  
 1. Перейти в терминале в папку проекта - notes_app
 2. Настроить виртуальное окружение из файла requirements.txt
-3. Прописать в терминале команду для создания базы данных для заметок(файл data.json в папке data перед этим можно удалить, он просто для демонстрации) 
-
- `python main_notes.py -option create -title "title" -msg "message"`
+3. Прописать в терминале команду для создания базы данных для заметок(файл data.json в папке data перед этим можно удалить, он просто для демонстрации) `python main_notes.py -option create -title "title" -msg "message"`
 
 > ТОЛЬКО ПОСЛЕ СОЗДАНИЯ БАЗЫ ДАННЫХ ДЛЯ ЗАМЕТОК ОСТАЛЬНЫЕ КОМАНДЫ БУДУТ ПРАВИЛЬНО РАБОАТЬ, ИНАЧЕ ОНИ ПРОСТО БУДУТ ИГНОРИРОВАТЬСЯ
-4. Для добавления новой замети:
-
-`python main_notes.py -option add -title "title" -msg "message"`
-5. Для удаления заметки по id:
-
- `python main_notes.py -option delete -id 123456`
-6. Для просмотра всех заметок(сортируются по дате создания):
-
- `python main_notes.py -option look`
-7. Для изменения заметки по id:
-
- `python main_notes.py -option edit -id 123456 -title "title" -msg "message"`
+4. Для добавления новой замети:`python main_notes.py -option add -title "title" -msg "message"`
+5. Для удаления заметки по id:`python main_notes.py -option delete -id 123456`
+6. Для просмотра всех заметок(сортируются по дате создания):`python main_notes.py -option look`
+7. Для изменения заметки по id:`python main_notes.py -option edit -id 123456 -title "title" -msg "message"`
